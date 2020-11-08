@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SPEED RECORDS</string>
+    <string name="total">TOTAL:</string>
+    <string name="over_limit">OVER LIMIT:</string>
+    <string name="speed_records">SPEED RECORDS</string>
+    <string name="overlimit_0">0</string>
+    <string name="total_0">0</string>
+    <string name="add_record">ADD RECORD</string>
+    <string name="guage_picture">gauge picture</string>
+    <string name="enter_distance_meters">Enter distance (meters)</string>
+    <string name="enter_duration_seconds">Enter duration (seconds)</string>
+    <string name="save">Save</string>
+    <string name="speed_0">0</string>
+    <string name="km_h">KM/H</string>
+    <string name="meters">METERS,</string>
+    <string name="distance_0">0</string>
+    <string name="duration_0">0</string>
+    <string name="seconds">SECONDS</string>
+    <string name="alert_picture">alert picture</string>
+    <string name="redbull">redbull</string>
+</resources>

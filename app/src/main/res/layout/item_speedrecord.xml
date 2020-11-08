@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg">
+
+    <TextView
+        android:id="@+id/speed_km_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/speed_0"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/km_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/km_h"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/speed_km_textview"
+        app:layout_constraintStart_toEndOf="@+id/speed_km_textview"
+        app:layout_constraintTop_toTopOf="@+id/speed_km_textview" />
+
+    <ImageView
+        android:id="@+id/alert_imageview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/alert_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@color/bg" />
+
+    <TextView
+        android:id="@+id/distance_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/distance_0"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speed_km_textview" />
+
+    <TextView
+        android:id="@+id/meter_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/meters"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/distance_textview"
+        app:layout_constraintStart_toEndOf="@+id/distance_textview"
+        app:layout_constraintTop_toTopOf="@+id/distance_textview" />
+
+    <TextView
+        android:id="@+id/duration_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/duration_0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/meter_textview"
+        app:layout_constraintStart_toEndOf="@+id/meter_textview"
+        app:layout_constraintTop_toTopOf="@+id/meter_textview" />
+
+    <TextView
+        android:id="@+id/seconds_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/seconds"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/duration_textview"
+        app:layout_constraintStart_toEndOf="@+id/duration_textview"
+        app:layout_constraintTop_toTopOf="@+id/duration_textview" />
+</androidx.constraintlayout.widget.ConstraintLayout>
